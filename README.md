@@ -89,6 +89,3 @@ Follow these steps to get the Commit Message Generator running on your local mac
 
 The application should now be accessible in your web browser!
 ```eof
-
-Dokumen ini sudah siap untuk Anda gunakan sebagai file utama repositori GitHub Anda.
-Apakah ada bagian lain yang perlu Anda tambahkan atau revisi?
