@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button"
 import Header from '../components/Header'
 import axios from 'axios'
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
 export default function Generate() {
     const [diffContent, setDiffContent] = useState('');
     const [result, setResult] = useState('');
@@ -16,7 +18,7 @@ export default function Generate() {
         setResult('');
 
         try {
-            const response = await axios.post('http://localhost:5000/api/commits/generate', {
+            const response = await axios.post(`${API_URL}/api/commits/generate`, {
                 diffContent: diffContent
             });
 
