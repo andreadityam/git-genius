@@ -12,7 +12,7 @@ export default function Generate() {
     const [error, setError] = useState('');
 
     const handleSubmit = async (e) => {
-        e.preventDefault(); // Mencegah halaman refresh saat submit
+        e.preventDefault();
         setIsLoading(true);
         setError('');
         setResult('');
