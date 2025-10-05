@@ -1,0 +1,41 @@
+File ini memberitahu Git file mana yang harus diabaikan.
+Baris yang diawali dengan # adalah komentar.
+Ketergantungan / Dependencies
+Folder ini ukurannya sangat besar dan bisa dibuat ulang dengan npm install.
+Wajib diabaikan untuk menjaga ukuran repositori tetap kecil.
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+File Produksi / Build
+Folder ini adalah hasil kompilasi dari kode sumber Anda (dibuat oleh npm run build).
+Tidak perlu disimpan di Git karena bisa dibuat ulang.
+frontend/dist/
+build/
+
+File Environment / Rahasia
+Ini bagian paling penting untuk KEAMANAN.
+File-file ini berisi kunci API, password database, dan data sensitif lainnya.
+JANGAN PERNAH meng-upload file ini ke GitHub.
+.env
+backend/.env
+frontend/.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+File Log dan Cache
+File-file ini dibuat otomatis oleh sistem untuk debugging atau cache.
+Tidak relevan untuk developer lain.
+npm-debug.log*
+yarn-error.log
+yarn-debug.log
+.npm/
+.vite/
+.yarn/
+
+File Spesifik Sistem Operasi
+File sampah yang dibuat oleh Windows atau macOS.
+.DS_Store
+Thumbs.db
